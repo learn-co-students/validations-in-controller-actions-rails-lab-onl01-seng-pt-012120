@@ -7,8 +7,7 @@ class PostsController < ApplicationController
   def edit
   end
 
-  def update
-    set_post! 
+  def update 
     @post.update(post_params)
     if @post.valid?
       @post.save
